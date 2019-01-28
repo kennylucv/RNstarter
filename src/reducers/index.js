@@ -1,14 +1,10 @@
-import { types as actionTypes } from "../actions/actions";
+import { combineReducers } from "redux";
+import NavReducer from "./navReducer";
+import Test from "./testReducer";
 
-const INITAL_STATE = {
-  hello: "world"
-};
+const rootReducer = combineReducers({
+  nav: NavReducer,
+  test: Test
+});
 
-export default (state = INITAL_STATE, action) => {
-  switch (action.type) {
-    case actionTypes.TEST_ACTION:
-      return { ...state, hello: "TEST" };
-    default:
-      return state;
-  }
-};
+export default rootReducer;
