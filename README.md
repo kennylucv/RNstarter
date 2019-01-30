@@ -5,6 +5,11 @@ Steps to run:
 1. yarn install / npm install
 2. react-native run-ios/run-android
 
+# Comments
+1. For the extra features, I've added the option of not only viewing the top stories, but the new and best stories as well
+2. For the list items Touch once to expand, touch the right arrow to open the article within the app. 
+3. To open in the browser, expand the list item and then click the open in browser button.
+
 # HomeX Mobile Test
 Hey! Seems you are interested in working at HomeX. This isn't a timed test, take as much or as little time as you feel you need (unfortunately we do need this back to assess you, so do keep that in mind). This is our little test to see what you know, and how you apply your knowledge to a real life use case.
 ## The Test
