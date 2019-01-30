@@ -62,9 +62,11 @@ class StoryItem extends React.Component {
           <View>
             <Separator />
             <ExpandedView>
-              <CenteredSubHeader style={{ flex: 1 }}>
-                {"Comments: " + story.descendants}{" "}
-              </CenteredSubHeader>
+              <View style={{ flex: 1, justifyContent: "center" }}>
+                <CenteredSubHeader>
+                  {"Comments: " + story.descendants}
+                </CenteredSubHeader>
+              </View>
               <TouchableOpacity
                 onPress={() => {
                   this.openInBrowser(story.url);
@@ -112,6 +114,7 @@ const styles = StyleSheet.create({
   },
   openInBrowser: {
     flex: 1,
+    height: 24,
     backgroundColor: "#222222",
     justifyContent: "center",
     alignItems: "center"
