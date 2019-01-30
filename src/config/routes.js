@@ -1,18 +1,20 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
 import Home from "../screens/Home";
+import Article from "../screens/ArticleView";
 
 const RootNavigator = createStackNavigator(
   {
     Home: {
-      screen: Home,
-      navigationOptions: {
-        title: "Home"
-      }
+      screen: Home
+    },
+    Article: {
+      screen: Article
     }
   },
   {
-    initialRouteName: "Home"
+    initialRouteName: "Home",
+    headerMode: "none"
   }
 );
 

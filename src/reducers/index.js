@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import NavReducer from "./navReducer";
-import Test from "./testReducer";
+import hackerNews from "./hackerNews";
 
 const rootReducer = combineReducers({
   nav: NavReducer,
-  test: Test
+  data: hackerNews
 });
 
 export default rootReducer;
